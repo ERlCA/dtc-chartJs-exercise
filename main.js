@@ -2,6 +2,7 @@ import { fetchData } from './script/FetchDatas.js';
 import { DatasExtraction } from './script/DatasExtraction.js';
 import { DisplayDatas } from './script/DisplayDatas.js';
 import { ChartJs } from './script/ChartJs.js';
+import { btn } from './script/ChartDate.js';
 
 (async () => {
   const datas = []
@@ -16,11 +17,17 @@ import { ChartJs } from './script/ChartJs.js';
   const chartJs = new ChartJs(datasExtraction.getRegionStats());
   btns.forEach(btn => {
     btn.addEventListener('click', () => {
-      if (btn.id === 'btn-statistics') {
-        displayDatas.render(datasExtraction.getRegionStats());
-      } else {
-        chartJs.render();
-        console.log('chart');
+      switch (btn.id) {
+        case 'btn-statistics':
+          displayDatas.render(datasExtraction.getRegionStats());
+          break;
+
+        case 'btn-chartjs':
+          chartJs.render();
+          break;
+
+        case 'btn-date':
+          break;
       }
     });
   })

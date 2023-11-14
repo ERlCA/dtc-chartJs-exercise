@@ -6,6 +6,7 @@ export class DisplayDatas {
       <tr>
         <th>Region</th>
         <th>Number of countries</th>
+        <th>Ship time (Day)</th>
         <th>Total Sold</th>
       </tr>
     `;
@@ -16,6 +17,7 @@ export class DisplayDatas {
         <tr>
           <td>${element.name}</td>
           <td>${element['Number of Countries']}</td>
+          <td>${element['Average Time']}</td>
           <td>${element['Total sold']}</td>
         </tr>
       `;
