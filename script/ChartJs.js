@@ -49,7 +49,5 @@ export class ChartJs {
         }
       },
     });
-
-    console.log('render');
   }
 }

@@ -2,7 +2,6 @@ import { fetchData } from './script/FetchDatas.js';
 import { DatasExtraction } from './script/DatasExtraction.js';
 import { DisplayDatas } from './script/DisplayDatas.js';
 import { ChartJs } from './script/ChartJs.js';
-import { btn } from './script/ChartDate.js';
 
 (async () => {
   const datas = []

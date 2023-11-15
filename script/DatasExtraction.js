@@ -3,7 +3,6 @@ export class DatasExtraction {
     this.datas = datas;
     this.regionStats = [];
     this.setRegionStats();
-    console.log(this.regionStats);
   }
 
   setRegionStats() {
