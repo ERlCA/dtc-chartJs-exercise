@@ -38,3 +38,16 @@ td, th {
   width: 700px;
   height: 700px;
 }
+
+.contents h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.contents .chartdate-container {
+  margin-top: 20px;
+}
+
+.chartdate-container h2 {
+  font-size: 20px;
+}

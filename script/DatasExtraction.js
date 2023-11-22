@@ -8,8 +8,8 @@ export class DatasExtraction {
   setRegionStats() {
     const regions = Array.from(new Set(this.datas.map(element => element.region)))
       .sort((a, b) => a.localeCompare(b));
-    regions.forEach(region => {
 
+    regions.forEach(region => {
       const duplicatedCountries = [];
       Array.from(this.datas.filter(element => element.region === region))
         .sort((a, b) => a.country.localeCompare(b.country))
